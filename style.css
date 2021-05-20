@@ -1,0 +1,60 @@
+body {
+  	font-family: 'Lato', sans-serif;
+  	color: #FFFFFF;
+  	background-image: url(./media/bg.jpg);
+  	background-repeat: no-repeat;
+  	background-size: cover; 
+}
+
+.orga{
+	display: flex;
+	flex-direction: column;
+}
+
+header.page-header{
+	background-image: url(./media/orange-flamme.jpg);
+	background-size: cover;
+	background-repeat: repeat;
+	display: flex;
+	height: 120px;
+	width: 100%;
+	align-items: center;
+	color: #FFFFFF;
+	text-shadow: #000 0 0 .2em;
+	position: -webkit-sticky;
+	position: fixed;
+}
+
+header.page-header > h1 {
+	font: bold calc(1em + 2 * (100vw - 120px) /100 ) 'Dancing Script' cursive , fantasy ;
+	margin: 2%;
+}
+
+header.nom-prenom {
+	display: flex;
+	flex-direction: column;
+}
+
+.bloc-principal{
+	display: flex;
+	flex-direction: row;
+	width: 300%;
+	height: 100%
+
+}
+
+.bloc-gauche{
+	width: 100%;
+	background-color: orange;
+}
+
+.bloc-centre{
+	width: 100%;
+	background-color: black;
+
+}
+
+.bloc-droite{
+	width : 100%;
+	background-color: red;
+}
