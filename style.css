@@ -1,3 +1,4 @@
+/*Parametre du body*/
 body {
   	font-family: 'Lato', sans-serif;
   	color: #FFFFFF;
@@ -8,6 +9,7 @@ body {
   	margin: 0;
 }
 
+/*Parametre du header*/
 header.page-header{
 	background-image: url(./media/orange-flamme.jpg);
 	background-repeat: repeat;
@@ -24,6 +26,7 @@ header.page-header{
 	position: fixed;
 }
 
+/* Parametre du titre h1 dans le header */
 header.page-header > h1 {
 	font: bold calc(1em + 2 * (100vw - 120px) /100 ) 'Dancing Script' cursive , fantasy ;
 }
@@ -34,37 +37,76 @@ header.page-header > h1 {
 
 }
 
-
+/*Parametre de la class nom prenom dans le header*/
 header.nom-prenom {
 	padding-left: 1.5em;
 	display: flex;
 	flex-direction: column;
 }
 
+/*parametre du bloc principal*/
 .bloc-principal{
+
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	align-items: flex-start;
 
-	width: 300%;
+	width: 3000px;
+	height: 85%;
+
+	position: absolute;
+	top: 11%;
+
+	border: 5px solid darkblue;
+
+}
+
+/*Parametre du bloc gauche*/
+.bloc-presentation{
+	display: flex;
+	width: 100em;
 	height: 100%;
-	padding-top: 103px;
 
-}
-
-.bloc-gauche{
-	width: 100%;
 	background-color: orange;
+
+	border: 5px solid red;
+}
+.bloc-presentation-droite{
+	width: 60%;
+	border: 5px solid green;
+
+}
+.phrase-accroche{
+	text-align: center;
 }
 
-.bloc-centre{
+.contact{
+	text-align : center;
+}
+
+/*Parametre de la photo dans le bloc de présentation*/
+.photo{
+	border: 5px solid black;
+	width: 90%;
+	padding-left: 1.5em;
+
+}
+
+.bloc-presentation-gauche{
+
+}
+
+/*Parametre du bloc centre*/
+.bloc-projet{
 	width: 100%;
 	background-color: black;
 
 }
 
-.bloc-droite{
+/*Parametre du bloc droite*/
+.bloc-idee{
 	width : 100%;
 	background-color: red;
 }
+
