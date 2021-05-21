@@ -11,3 +11,6 @@ Réussite => 5/10. cf-> note plus bas.
 
 Note : Penser a rajouter des px a la widht du bloc principale lors du rajout d'élément genre projet ou idée afin d'éviter les déformations.
 A faire --> Améliorer le système afin de le rendre adaptable au contenus et récursif.
+
+Les boutons ont été inspiré ici :
+https://codepen.io/ma_suwa/pen/QWWqJBK

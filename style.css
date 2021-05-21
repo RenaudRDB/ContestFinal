@@ -16,7 +16,7 @@ header.page-header{
 	background-size: cover;
 
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 
 	height: 103px;
 	width: 100%;
@@ -24,6 +24,8 @@ header.page-header{
 	color: #FFFFFF;
 	text-shadow: #000 0 0 .2em;
 	position: fixed;
+
+	padding-left: 200px;
 }
 
 /* Parametre du titre h1 dans le header */
@@ -31,19 +33,105 @@ header.page-header > h1 {
 	font: bold calc(1em + 2 * (100vw - 120px) /100 ) cursive , fantasy ;
 }
 
-.ancre{
-	display: flex;
-	justify-content: space-between;
-	width: 33%
-
-}
-
 /*Parametre de la class nom prenom dans le header*/
 header.nom-prenom {
-	padding-left: 1.25em;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 }
+
+.bouton{
+	width: 50%;
+
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	
+
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+  
+  padding:  40px 0px;
+  width: 100%;
+}
+
+/*Copier coller depuis le site mis en ReadMe*/
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect01 {
+  color: #FFF;
+  border: 4px solid #000;
+  box-shadow:0px 0px 0px 1px #000 inset;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.effect01:hover {
+  border: 4px solid #666;
+  background-color: #FFF;
+  box-shadow:0px 0px 0px 4px #EEE inset;
+}
+
+/*btn_text*/
+.effect01 span {
+  transition: all 0.2s ease-out;
+  z-index: 2;
+}
+.effect01:hover span{
+  letter-spacing: 0.13em;
+  color: #333;
+}
+
+/*highlight*/
+.effect01:after {
+  background: #FFF;
+  border: 0px solid #000;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .8;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+  z-index: 1;
+}
+.effect01:hover:after {
+  background: #FFF;
+  border: 20px solid #000;
+  opacity: 0;
+  left: 120%;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+/*Fin du copie Colle*/
 
 /*parametre du bloc principal*/
 .bloc-principal{
@@ -70,6 +158,27 @@ header.nom-prenom {
 	background-color: orange;
 	background-image: linear-gradient(to right, red, orange);
 
+}
+
+.contact{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.bouton-contact{
+	display: block;
+	width: 200px;
+	line-height: 50px;
+	text-align:center;
+	vertical-align:middle;
+	background-image: linear-gradient(to right, red, orange);
+	color: white;
+	text-decoration :none;
+}
+.bouton-contact:hover {
+	background-image: linear-gradient(to right, orange, orange);
+	transition: margin-right 2s;
 }
 
 .bloc-presentation-droite{
