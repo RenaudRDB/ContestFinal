@@ -2,9 +2,9 @@
 body {
   	font-family: 'Lato', sans-serif;
   	color: #FFFFFF;
-  	background-color: #3747CA;
-  	background-repeat: repeat;
-  	background-attachment: scroll, local;
+
+  	background-color: black;
+
   	padding : 0;
   	margin: 0;
 }
@@ -28,8 +28,9 @@ header.page-header{
 
 /* Parametre du titre h1 dans le header */
 header.page-header > h1 {
-	font: bold calc(1em + 2 * (100vw - 120px) /100 ) 'Dancing Script' cursive , fantasy ;
+	font: bold calc(1em + 2 * (100vw - 120px) /100 ) cursive , fantasy ;
 }
+
 .ancre{
 	display: flex;
 	justify-content: space-between;
@@ -39,7 +40,7 @@ header.page-header > h1 {
 
 /*Parametre de la class nom prenom dans le header*/
 header.nom-prenom {
-	padding-left: 1.5em;
+	padding-left: 1.25em;
 	display: flex;
 	flex-direction: column;
 }
@@ -53,12 +54,10 @@ header.nom-prenom {
 	align-items: flex-start;
 
 	width: 3000px;
-	height: 85%;
+	height: 87%;
 
 	position: absolute;
 	top: 11%;
-
-	border: 5px solid darkblue;
 
 }
 
@@ -69,14 +68,14 @@ header.nom-prenom {
 	height: 100%;
 
 	background-color: orange;
+	background-image: linear-gradient(to right, red, orange);
 
-	border: 5px solid red;
 }
+
 .bloc-presentation-droite{
 	width: 60%;
-	border: 5px solid green;
-
 }
+
 .phrase-accroche{
 	text-align: center;
 }
@@ -87,26 +86,90 @@ header.nom-prenom {
 
 /*Parametre de la photo dans le bloc de présentation*/
 .photo{
-	border: 5px solid black;
 	width: 90%;
-	padding-left: 1.5em;
-
+	padding-left: 1.1em;
 }
 
+/*Parametre du bloc de présentation gauche dans le bloc de présentation principal*/
 .bloc-presentation-gauche{
-
+	text-align : center;
 }
 
-/*Parametre du bloc centre*/
-.bloc-projet{
+/*Parametre du bloc centre, le bloc principal des projets*/
+.bloc-p-projet{
 	width: 100%;
+	height: 100%;
 	background-color: black;
+	background-image: linear-gradient(to right, orange, black, orange);
 
 }
 
-/*Parametre du bloc droite*/
+/*Parametre des blocs de projets*/
+.bloc-projet {
+	margin-left: 15px;
+	margin-right: 15px;
+
+}
+.bloc-projet > h3{
+	border: 1px solid black;
+	background-image: linear-gradient(to right, red, orange, red);
+	text-align: center;
+}
+
+.project-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.b-p-g{
+	width: 40%
+}
+
+.b-p-g > img {
+	border: 2px solid black;
+
+	width: 100%;
+}
+
+.b-p-d{
+	width: 40%
+}
+
+/*Parametre du bloc de droite, celui des idées*/
 .bloc-idee{
 	width : 100%;
+	height: 100%;
+
 	background-color: red;
+	background-image: linear-gradient(to right, orange, red);
 }
 
+.bloc-idee > h3 {
+	border: 1px solid black;
+	background-image: linear-gradient(to right, black, orange, black);
+	text-align: center;
+}
+.bloc-idee > h5{
+	border: 1px solid black;
+	background-image: linear-gradient(to right, violet, orange, violet);
+	text-align: center;
+}
+
+.idea-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.b-i-g{
+	width: 45%
+}
+
+.b-i-g > img{
+	width: 100%
+}
+
+.b-i-d{
+	width: 45%
+}
