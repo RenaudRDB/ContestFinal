@@ -175,10 +175,13 @@ header.nom-prenom {
 	background-image: linear-gradient(to right, red, orange);
 	color: white;
 	text-decoration :none;
+
+	transition: width 2s, height 2s, background-image 2s;
 }
 .bouton-contact:hover {
 	background-image: linear-gradient(to right, orange, orange);
-	transition: margin-right 2s;
+	width: 250px;
+	height: 75px;
 }
 
 .bloc-presentation-droite{
@@ -281,4 +284,28 @@ header.nom-prenom {
 
 .b-i-d{
 	width: 45%
+}
+
+/*Parametrage du dragon qui bouge*/
+.dragon{
+
+	position: fixed;
+	width: 10%;
+	top: 80%;
+	left: 90%;
+
+	animation-name: bouge;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bouge{
+	0%{
+		transform: translateX(+200px);
+	}
+	100%{
+		transform: translateX(-3000px);
+	}
 }
